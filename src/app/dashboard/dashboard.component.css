@@ -1,0 +1,61 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+}
+.dashboard-options-container{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(211, 211, 211);
+    border-radius: 0px 0px 0px 1px;
+    width: 200px;
+    height: 100svh;
+    gap: 15px;
+    padding: 20px;
+}
+.dashboard-options-container img{
+    place-self: center;
+    width: 100px;
+}
+.dashboard-options-container ul{
+    margin: 0px;
+    padding: 0px;
+}
+.dashboard-options-container ul li{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+.dashboard-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 1px blue inset;
+}
+.dashboard-title-left h3, p{
+    margin: 0px;
+    margin-left: 20px;
+}
+.dashboard-title-center{
+    display: flex;
+    flex: 1;
+    align-items: end;
+    justify-content: end;
+}
+.dashboard-title-center img{
+    width: 25px;
+}
+.graph-container{
+    display: flex;
+    flex-direction: column;
+}
+.salary-card{
+    
+}

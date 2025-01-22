@@ -1,0 +1,46 @@
+<div class="dashboard-container">
+    <div class="dashboard-options-container">
+        <img src="assets/sportiq.jpg" alt="sportiq">
+        <ul class="dashboard-options">
+            <li style="background-color: blue; color: white;">Dashboard</li>
+            <li>Analytics</li>
+            <li>Payment</li>
+            <li>Orders</li>
+            <li>Enquiry</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="dashboard-title">
+            <div class="dashboard-title-left">
+                <h3>Welcome Admin</h3>
+                <p>20 January 2025</p>
+            </div>
+            <div class="dashboard-title-center">
+                <img src="assets/notification.png" alt="">
+            </div>
+            <div class="dashboard-title-right">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="graph-container">
+            <div class="graph-container-left">
+                <div class="salary-card">
+                    <h3>Average Sales</h3>
+                    <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [legend]="lineChartLegend"
+          [type]="'bar'">
+  </canvas>
+                </div>
+                <div class="profit-card"></div>
+            </div>
+            <div class="graph-container-right">
+                <div class="sales-card"></div>
+                <div class="product-list-card"></div>
+            </div>
+        </div>
+    </div>
+</div>
