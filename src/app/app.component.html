@@ -1,1 +1,19 @@
-<router-outlet />
+<input type="file" (change)="onFileChange($event)" />
+<button (click)="onEncrypt()">Encrypt</button>
+<button (click)="onDecrypt()">Decrypt</button>
+
+<div *ngIf="decryptedFileUrl">
+  <!-- Display Image -->
+  <div *ngIf="fileType === 'image'">
+    <img [src]="decryptedFileUrl" alt="Decrypted Image" *ngIf="decryptedFileUrl">
+  </div>
+  
+  <div *ngIf="fileType === 'pdf'">
+    <iframe [src]="decryptedFileUrl" width="100%" height="500px"></iframe>
+  </div>
+  
+  <div *ngIf="fileType === 'other'">
+    <a [href]="decryptedFileUrl" download="decrypted-file">Download File</a>
+  </div>
+  
+</div>

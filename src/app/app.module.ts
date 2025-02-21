@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgChartsModule } from 'ng2-charts';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgChartsModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    HttpClient
   ],
   bootstrap: [AppComponent]
 })
